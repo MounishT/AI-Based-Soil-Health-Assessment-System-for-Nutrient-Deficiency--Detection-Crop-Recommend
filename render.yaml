@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: soil-health-backend
+    env: docker
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SARVAM_API_KEY
+        sync: false

@@ -1,0 +1,18 @@
+
+.venv/
+__pycache__/
+uploads/
+models/*.h5
+models/*.pkl
+models/*.keras
+
+# Editor & workspace
+.vscode/
+*.worktrees/
+
+# Data, archives & generated reports
+*.zip
+Soil types/
+reports/*.pdf
+
+

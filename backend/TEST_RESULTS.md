@@ -1,0 +1,37 @@
+# Test Results
+
+**Run Date:** 2026-09-02 22:12:05
+**Status:** PASS
+
+## Log Output
+```
+============================= test session starts =============================
+platform win32 -- Python 3.10.0, pytest-8.2.0, pluggy-1.6.0 -- C:\Users\mouni\AppData\Local\Programs\Python\Python310\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\mouni\OneDrive\Desktop\AI-Based-Soil-Health-Assessment-System-for-Nutrient-Deficiency -Detection Crop-Recommend\backend
+plugins: anyio-4.14.2, asyncio-0.23.6
+asyncio: mode=strict
+collecting ... collected 12 items
+
+tests/test_analysis.py::test_analyze_valid_input PASSED                  [  8%]
+tests/test_analysis.py::test_analyze_missing_values PASSED               [ 16%]
+tests/test_analysis.py::test_analyze_invalid_type PASSED                 [ 25%]
+tests/test_analysis.py::test_analyze_with_invalid_image PASSED           [ 33%]
+tests/test_auth.py::test_register_success PASSED                         [ 41%]
+tests/test_auth.py::test_register_duplicate_email PASSED                 [ 50%]
+tests/test_auth.py::test_login_success PASSED                            [ 58%]
+tests/test_auth.py::test_login_invalid_password PASSED                   [ 66%]
+tests/test_auth.py::test_login_non_existent_user PASSED                  [ 75%]
+tests/test_images.py::test_image_upload_success PASSED                   [ 83%]
+tests/test_images.py::test_image_upload_invalid_type PASSED              [ 91%]
+tests/test_images.py::test_image_upload_no_file PASSED                   [100%]
+
+============================== warnings summary ===============================
+tests/test_analysis.py::test_analyze_valid_input
+  C:\Users\mouni\OneDrive\Desktop\AI-Based-Soil-Health-Assessment-System-for-Nutrient-Deficiency -Detection Crop-Recommend\backend\routers\analysis.py:103: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.10/migration/
+    "inputs_used": req.dict()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 12 passed, 1 warning in 2.73s ========================
+
+```
